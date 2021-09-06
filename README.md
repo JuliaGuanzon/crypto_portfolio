@@ -1,6 +1,6 @@
 # Cryptocurrency Portfolio Performance
 
-Measuring portfolio performance can be very simple and straight forward. Calculating returns and volatility can be a breeze when you compare a few stocks and protfolios, but comparing more than that may prove to be disasterous. With this new cryptocurrency portfolio prototype, we can easily see which cryptocurrencies are the best performers. Not only can compare performance, but we can do it using the fewest features possible to give the user a condensed set of information.
+Measuring portfolio performance can be very simple and straight forward. Calculating returns and volatility can be a breeze when you compare a few stocks and protfolios, but comparing more than that may prove to be disastrous. With this new cryptocurrency portfolio prototype, we can easily see which cryptocurrencies are the best performers. Not only can compare performance, but we can do it using the fewest features possible to give the user a summarized set of information.
 
 
 ---
@@ -85,6 +85,7 @@ jupyter lab
 ```
 to run the file.
 
+![image](https://user-images.githubusercontent.com/84649228/132158743-d6666282-b000-4bb0-b26c-ba4fac99d3c5.png)
 
 
 When using the file, each line of code must be individually ran to capture the data. This ensures any data that needs to be pulled gets included in future calculations as we start to build out formulas for analysis. It is important that we do not miss a line of code.
@@ -93,8 +94,25 @@ To quickly execute the code, use the keyboard shortcut: Shift + Enter.
 
 The most important piece of code we need to run is the imports. Without these, nothing would work.
 
-![01_import](https://user-images.githubusercontent.com/84649228/126043950-a43d3c63-8054-46be-9a7c-6825b90cd56f.PNG)
+![image](https://user-images.githubusercontent.com/84649228/132158781-51440311-ead3-469a-8e72-def743f83e89.png)
 
+First, the user is provided with the price change percentage for all cryptocurrencies, as well as a graphed version.
+
+![image](https://user-images.githubusercontent.com/84649228/132158919-5e63b1e2-111d-459d-a69a-17b045e5f77d.png)
+
+Next, the application scales the data and focuses on finding the best value for 'k' for the K-means algorithm, which aids in building our clusters around a centroid.
+
+![image](https://user-images.githubusercontent.com/84649228/132159340-fb1045d9-38f0-47aa-a30e-a0b3afb11da4.png)
+
+To efficiently summarize the information needed, the calculation of PCA is used. PCAs are tested and clusters are plotted as well.
+
+![image](https://user-images.githubusercontent.com/84649228/132159473-7ace0740-c01b-40d6-bae2-ca73da05b003.png)
+
+
+In the end, the user is presented with a comparison of the original data and PCA data of the elbow curve and the cluster results. The elbow curve comparison shows that both ways agree that four is the best value for 'k'. In the cluster results, the original data is clearly stated, while the PCA condenses the information.
+
+![image](https://user-images.githubusercontent.com/84649228/132159996-fd7da6d5-2b98-4b01-8d48-bc610e7a50b4.png)
+![image](https://user-images.githubusercontent.com/84649228/132160009-a53b2906-1ee8-41c8-acaf-f89ddc66e365.png)
 
 
 ---
